@@ -94,9 +94,12 @@ public class IndexFrame implements BaseFrame{
 		}
 		}
 	}
+         /**
+	 *注册页面
+	 */
 	@Override
 	public void addShow() {
-		// TODO Auto-generated method stub
+	
 		
 	}
 
