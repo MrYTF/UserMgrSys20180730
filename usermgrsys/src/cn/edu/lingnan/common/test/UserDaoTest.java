@@ -2,7 +2,6 @@ package cn.edu.lingnan.common.test;
 
 import java.sql.Connection;
 import java.util.Vector;
-import javax.management.modelmbean.DescriptorSupport;
 
 import org.junit.Test;
 

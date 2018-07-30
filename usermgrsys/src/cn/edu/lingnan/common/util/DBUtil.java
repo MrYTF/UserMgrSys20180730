@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import cn.edu.lingnan.common.exception.DaoException;
 
@@ -28,7 +27,7 @@ public class DBUtil {
 		try {
 			Class.forName(driver); 
 			connection = DriverManager.getConnection(url,username,password);
-			System.out.println("数据库连接成功......");
+			//System.out.println("数据库连接成功......");
 		} catch (ClassNotFoundException e) {
 			throw new DaoException("数据库jar包加载失败......",e);
 			//System.out.println("数据库jar包加载失败......");
@@ -86,13 +85,13 @@ public class DBUtil {
 	 * 关闭数据库
 	 * @throws Exception
 	 */
-	public static void closeConnection(Connection connection) throws Exception{
+	public static void closeConnection(Connection connection){
 		try {
 			//如果数据库连接对象不为空，关闭该对象
 			if (connection != null) {
 				connection.close();
 			}
-			System.out.println("关闭数据库连接成功......");	
+			//System.out.println("关闭数据库连接成功......");	
 		} catch (SQLException e) {
 			throw new DaoException("关闭数据库连接失败......",e);
 //			System.out.println("关闭数据库连接失败......");

@@ -1,7 +1,6 @@
 package cn.edu.lingnan.common.test;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 
 import org.junit.Test;
 
